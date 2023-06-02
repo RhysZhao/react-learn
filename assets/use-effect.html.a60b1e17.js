@@ -1,0 +1,1 @@
+const e={key:"v-4e034846",path:"/base/use-effect.html",title:"useEffect",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1685672426e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"base/use-effect.md"};export{e as data};

@@ -1,0 +1,1 @@
+const e={key:"v-def8cb5a",path:"/base/use-state.html",title:"useState",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1685672426e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"base/use-state.md"};export{e as data};

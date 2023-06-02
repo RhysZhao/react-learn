@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as o,b as s,a as t}from"./app.26abc47b.js";const r={},c={id:"usememo",tabindex:"-1"},_=t("a",{class:"header-anchor",href:"#usememo","aria-hidden":"true"},"#",-1);function m(n,d){return a(),o("h1",c,[_,s(" useMemo")])}var i=e(r,[["render",m],["__file","use-memo.html.vue"]]);export{i as default};

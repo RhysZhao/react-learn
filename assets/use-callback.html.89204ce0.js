@@ -1,0 +1,1 @@
+const e={key:"v-5b7d4070",path:"/senior/use-callback.html",title:"useCallback",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1685672426e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"senior/use-callback.md"};export{e as data};

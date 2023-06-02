@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,b as a,a as s}from"./app.26abc47b.js";const r={},f={id:"useeffect",tabindex:"-1"},o=s("a",{class:"header-anchor",href:"#useeffect","aria-hidden":"true"},"#",-1);function _(n,d){return t(),c("h1",f,[o,a(" useEffect")])}var i=e(r,[["render",_],["__file","use-effect.html.vue"]]);export{i as default};

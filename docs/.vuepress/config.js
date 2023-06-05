@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-03-02 14:02:43
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-02 18:18:05
+ * LastEditTime  2023-06-05 19:05:07
  * Description
  */
 
@@ -50,7 +50,8 @@ module.exports = {
             '/base/use-state.md',
             '/base/use-ref.md',
             '/base/use-effect.md',
-            '/base/use-layout-effect.md'
+            '/base/use-layout-effect.md',
+            '/base/custom-hook.md'
           ]
         }
       ],
@@ -62,8 +63,7 @@ module.exports = {
             '/senior/memo.md',
             '/senior/use-memo.md',
             '/senior/use-callback.md',
-            '/senior/use-transition.md',
-            '/senior/custom-hook.md'
+            '/senior/use-transition.md'
           ]
         }
       ],

@@ -1,1 +1,0 @@
-import{_ as e,o as a,c,b as s,a as t}from"./app.26abc47b.js";const r={},l={id:"usecallback",tabindex:"-1"},o=t("a",{class:"header-anchor",href:"#usecallback","aria-hidden":"true"},"#",-1);function _(n,d){return a(),c("h1",l,[o,s(" useCallback")])}var i=e(r,[["render",_],["__file","use-callback.html.vue"]]);export{i as default};

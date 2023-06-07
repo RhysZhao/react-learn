@@ -1,0 +1,1 @@
+const t={key:"v-119107b8",path:"/senior/use-transition.html",title:"use-transition",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1686129066e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"senior/use-transition.md"};export{t as data};

@@ -1,1 +1,0 @@
-const e={key:"v-3fe9ea34",path:"/senior/",title:"\u524D\u8A00",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u5185\u5BB9\u4ECB\u7ECD",slug:"\u5185\u5BB9\u4ECB\u7ECD",children:[]}],git:{updatedTime:1685672426e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"senior/README.md"};export{e as data};

@@ -1,1 +1,0 @@
-import{_ as e,o as a,c as r,b as s,a as t}from"./app.26abc47b.js";const c={},o={id:"useref",tabindex:"-1"},_=t("a",{class:"header-anchor",href:"#useref","aria-hidden":"true"},"#",-1);function n(f,d){return a(),r("h1",o,[_,s(" useRef")])}var i=e(c,[["render",n],["__file","use-ref.html.vue"]]);export{i as default};

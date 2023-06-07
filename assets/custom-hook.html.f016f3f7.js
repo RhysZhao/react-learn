@@ -1,0 +1,1 @@
+const t={key:"v-dd62ef42",path:"/base/custom-hook.html",title:"\u81EA\u5B9A\u4E49 hook",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1686129066e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"base/custom-hook.md"};export{t as data};

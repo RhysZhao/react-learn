@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,b as a,a as c}from"./app.18fad17a.js";const r={},s={id:"\u81EA\u5B9A\u4E49-hook",tabindex:"-1"},_=c("a",{class:"header-anchor",href:"#\u81EA\u5B9A\u4E49-hook","aria-hidden":"true"},"#",-1);function h(n,d){return o(),t("h1",s,[_,a(" \u81EA\u5B9A\u4E49 hook")])}var f=e(r,[["render",h],["__file","custom-hook.html.vue"]]);export{f as default};

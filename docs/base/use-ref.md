@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-06-02 09:53:34
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-05 18:20:47
+ * LastEditTime  2023-06-07 17:09:49
  * Description
 -->
 
@@ -153,6 +153,8 @@ export default function Form() {
 
 效果：点击聚焦输入框按钮，输入框将会聚焦。
 
+![](../images/use-ref/focus.gif)
+
 这段代码主要做了以下事情：
 
 1. 使用 `useRef` Hook 声明 `inputRef`。
@@ -161,3 +163,67 @@ export default function Form() {
 4. 给按钮添加点击事件`handleClick`
 
 ## forwardRef
+
+我们可以使用 ref 属性配合 useRef 直接调用 DOM。那么可不可以给组件添加 ref 调用组件的 DOM 呢？让我们来[试一下](https://codesandbox.io/s/bwk6kp?file=/App.js&utm_medium=sandpack)：
+
+```js
+import { useRef } from 'react';
+
+function MyInput(props) {
+  return <input {...props} />;
+}
+
+export default function MyForm() {
+  const inputRef = useRef(null);
+
+  function handleClick() {
+    inputRef.current.focus();
+  }
+
+  return (
+    <>
+      <MyInput ref={inputRef} />
+      <button onClick={handleClick}>聚焦输入框</button>
+    </>
+  );
+}
+```
+
+我们给 `MyInput` 组件加上了 `ref`，可是当我们点击 聚焦输入框按钮，则会报错：`Cannot read properties of null (reading 'focus')`
+
+也就是说 `inputRef.current` 是 `null`。我们并不能拿到组件的 DOM 元素。
+
+默认情况下，React 不允许组件访问其他组件的 DOM 节点。这是因为 ref 是应急方案，应当谨慎使用。**如果组件想要暴露自己的的 DOM，则需要使用`forwardRef`来包装，并把 ref 转发给自己的子元素。** 比如这样：
+
+```js{3-5}
+import { forwardRef, useRef } from 'react';
+
+const MyInput = forwardRef((props, ref) => {
+  return <input {...props} ref={ref} />;
+});
+
+export default function Form() {
+  const inputRef = useRef(null);
+
+  function handleClick() {
+    inputRef.current.focus();
+  }
+
+  return (
+    <>
+      <MyInput ref={inputRef} />
+      <button onClick={handleClick}>聚焦输入框</button>
+    </>
+  );
+}
+```
+
+它是这样工作的:
+
+1. `<MyInput ref={inputRef} />` 告诉 React 将对应的 DOM 节点放入 `inputRef.current` 中。但是，这取决于 `MyInput` 组件是否允许这种行为， 默认情况下是不允许的。
+
+2. `MyInput` 组件是使用 forwardRef 声明的。 这让从上面接收的 `inputRef` 作为第二个参数 ref 传入组件，第一个参数是 props 。
+
+3. `MyInput` 组件将自己接收到的 ref 传递给它内部的 `<input>`。
+
+这样就通过 `forwardRef` 向父组件暴露了子组件的 DOM 节点。

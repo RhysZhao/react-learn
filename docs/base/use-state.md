@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-06-02 09:53:42
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-02 19:30:24
+ * LastEditTime  2023-06-07 16:26:55
  * Description
 -->
 
@@ -266,13 +266,13 @@ export default function Counter() {
 
 set 函数触发更新的条件：
 
-- 值类型，state 的值改变
-- 引用类型，state 的引用改变
+- **值类型，state 的值改变**
+- **引用类型，state 的引用改变**
 
 对于上面的例子：
 
 - number 是值类型。点击增加数字，值没有改变，不会触发更新。
-- person 是引用类型。点击修改对象，虽然 person 对象的值虽然变化了，但是引用没有变化，因此也不会触发更新。
+- person 是引用类型。点击修改对象，虽然 person 对象的值虽然变化了，但是引用地址没有变化，因此也不会触发更新。
 
 ### 4. 构建 state 的原则
 
@@ -392,11 +392,9 @@ const fullName = firstName + ' ' + lastName;
 
 4. 避免重复的 state
 
-   具体例子见官网[https://react.docschina.org/learn/choosing-the-state-structure#avoid-deeply-nested-state](https://react.docschina.org/learn/choosing-the-state-structure#avoid-deeply-nested-state)
+有时候，在我们存储的 state 中，可能有两个 state 有重合的部分。这时候我们就要考虑是不是有重复的问题了。
 
-5. 避免深度嵌套的 state
-
-   具体例子见官网[https://react.docschina.org/learn/choosing-the-state-structure#avoid-deeply-nested-state](https://react.docschina.org/learn/choosing-the-state-structure#avoid-deeply-nested-state)
+具体例子见[这里](https://react.docschina.org/learn/choosing-the-state-structure#avoid-duplication-in-state)
 
 ### 5. 保存和重置 state
 
@@ -445,9 +443,9 @@ function Counter({ isFancy }) {
 }
 ```
 
-当我们修改了 Counter 的 state 后，点击 checkbox 切换到另一个 Counter，旧 Counter 的 state 并没有变为 0，而是保留了下来。如下图：
+当我们修改了 `Counter`组件 的 state 后，点击 `checkbox` 切换到另一个 `Counter`，旧 `Counter` 的 state 并没有变为 0，而是保留了下来。如下图：
 
-![](../images/react-tutorial/state-preserve.gif)
+![](../images/use-state/state-preserve.gif)
 
 在 React 中，**相同位置的相同组件会使得 state 保留下来**。那么怎么才能让上述例子的 state 重置呢？
 
@@ -477,7 +475,7 @@ function Counter({ isFancy }) {
 
 效果如下：
 
-![](../images/react-tutorial/state-reset.gif)
+![](../images/use-state/state-reset.gif)
 
 ### 6. useReducer 与 useContext
 

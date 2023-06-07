@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-03-02 14:02:43
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-05 19:05:07
+ * LastEditTime  2023-06-07 15:17:37
  * Description
  */
 
@@ -14,6 +14,7 @@ module.exports = {
   description: 'React官方文档学习总结',
 
   port: '8899',
+  open: true,
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',

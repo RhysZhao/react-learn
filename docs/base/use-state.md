@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-06-02 09:53:42
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-07 16:26:55
+ * LastEditTime  2023-06-07 17:17:48
  * Description
 -->
 
@@ -476,7 +476,3 @@ function Counter({ isFancy }) {
 效果如下：
 
 ![](../images/use-state/state-reset.gif)
-
-### 6. useReducer 与 useContext
-
-待更新...

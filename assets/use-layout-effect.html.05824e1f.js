@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a,b as c,a as o}from"./app.18fad17a.js";const s={},r={id:"uselayouteffect",tabindex:"-1"},f=o("a",{class:"header-anchor",href:"#uselayouteffect","aria-hidden":"true"},"#",-1);function _(u,n){return t(),a("h1",r,[f,c(" useLayoutEffect")])}var l=e(s,[["render",_],["__file","use-layout-effect.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const t={key:"v-2765f69a",path:"/origin/jsx.html",title:"jsx \u539F\u7406",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1686220075e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"origin/jsx.md"};export{t as data};

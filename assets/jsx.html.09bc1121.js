@@ -1,1 +1,0 @@
-import{_ as e,o as a,c as s,b as t,a as r}from"./app.baf90ae5.js";const c={},o={id:"jsx-\u539F\u7406",tabindex:"-1"},_=r("a",{class:"header-anchor",href:"#jsx-\u539F\u7406","aria-hidden":"true"},"#",-1);function n(d,h){return a(),s("h1",o,[_,t(" jsx \u539F\u7406")])}var x=e(c,[["render",n],["__file","jsx.html.vue"]]);export{x as default};

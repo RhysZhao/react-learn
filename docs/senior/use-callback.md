@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-06-02 09:55:29
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-02 18:12:19
+ * LastEditTime  2023-06-12 10:05:26
  * Description
 -->
 
@@ -55,7 +55,7 @@ export default function App() {
 }
 ```
 
-当我们点击 count 会造成子组件的渲染，这是因为 onChangeText 是引用类型，每次父组件渲染，它都被重新定义。这导致了每次 props 都发生了变化。我们可以使用 useCallback 来缓存 onChangeText:
+当我们点击 count 会造成子组件的渲染，这是因为 `onChangeText` 是引用类型，每次父组件渲染，它都被重新定义。这导致了每次 props 都发生了变化。我们可以使用 `useCallback` 来缓存 `onChangeText`:
 
 ```js
 // 使用useCallback来缓存onChangeText
@@ -107,4 +107,4 @@ function useRouter() {
 有人认为应当给所有的函数包上 useCallback, 我并不认同。主要是出于以下两个考虑：
 
 1. 使用 useCallback 后代码可读性变差
-2. 创建一个函数的性能消耗几乎可以忽略不急，不应作为优化点
+2. 创建一个函数的性能消耗几乎可以忽略不计，不应作为优化点

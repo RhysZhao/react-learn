@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-06-02 18:16:33
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-08 17:59:02
+ * LastEditTime  2023-06-12 09:04:40
  * Description
 -->
 
@@ -59,7 +59,7 @@ export default function App() {
 ```
 useEffect: render => commit(反映到页面上) => useEffect => render => commit(反映到页面上)
 
-useLayoutEffect: render => useEffect => render => commit(反映到页面上)
+useLayoutEffect: render => useLayoutEffect => render => commit(反映到页面上)
 ```
 
 `useLayoutEffect` 执行后发现 state 更新，就不再把 `11111` 反映到页面上了，直接再次执行 react 渲染。因此我们没有看到从 `11111` 闪烁成 `00000` 的过程。

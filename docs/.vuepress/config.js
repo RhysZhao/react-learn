@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-03-02 14:02:43
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-07 15:17:37
+ * LastEditTime  2023-06-12 08:37:32
  * Description
  */
 
@@ -48,6 +48,7 @@ module.exports = {
           children: [
             '/base/README.md',
             '/base/pure-function.md',
+            '/base/render-commit.md',
             '/base/use-state.md',
             '/base/use-ref.md',
             '/base/use-effect.md',

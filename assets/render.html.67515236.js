@@ -1,1 +1,0 @@
-import{_ as e,o as r,c as a,b as t,a as n}from"./app.bfc3344c.js";const c={},d={id:"render-\u539F\u7406",tabindex:"-1"},o=n("a",{class:"header-anchor",href:"#render-\u539F\u7406","aria-hidden":"true"},"#",-1);function s(_,h){return r(),a("h1",d,[o,t(" render \u539F\u7406")])}var f=e(c,[["render",s],["__file","render.html.vue"]]);export{f as default};

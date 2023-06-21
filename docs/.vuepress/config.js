@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-03-02 14:02:43
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-12 08:37:32
+ * LastEditTime  2023-06-20 14:12:27
  * Description
  */
 
@@ -72,7 +72,18 @@ module.exports = {
       '/origin/': [
         {
           text: '原理篇',
-          children: ['/origin/README.md', '/origin/jsx.md', '/origin/render.md', '/origin/concurrency.md']
+          children: [
+            '/origin/README.md',
+            '/origin/prepare.md',
+            '/origin/jsx.md',
+            '/origin/render.md',
+            '/origin/concurrency.md',
+            '/origin/fiber.md',
+            '/origin/render-commit.md',
+            '/origin/reconciler.md',
+            '/origin/func.md',
+            '/origin/hooks.md'
+          ]
         }
       ]
     }

@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as t,b as a,a as c}from"./app.fa754546.js";const o={},n={id:"render-commit",tabindex:"-1"},d=c("a",{class:"header-anchor",href:"#render-commit","aria-hidden":"true"},"#",-1);function s(m,_){return r(),t("h1",n,[d,a(" render & commit")])}var h=e(o,[["render",s],["__file","render-commit.html.vue"]]);export{h as default};

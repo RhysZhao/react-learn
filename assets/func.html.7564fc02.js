@@ -1,0 +1,1 @@
+const t={key:"v-eb755436",path:"/origin/func.html",title:"\u51FD\u6570\u5F0F\u7EC4\u4EF6",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1687339261e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"origin/func.md"};export{t as data};

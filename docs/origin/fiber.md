@@ -2,7 +2,7 @@
  * Author  rhys.zhao
  * Date  2023-06-20 14:06:37
  * LastEditors  rhys.zhao
- * LastEditTime  2023-06-21 17:17:46
+ * LastEditTime  2023-06-21 20:04:44
  * Description
 -->
 
@@ -44,7 +44,7 @@ miniReact.render(
 
 整个渲染过程，其实就是 **按照 第一个子节点 -> 兄弟节点 -> 父节点的兄弟节点 的优先级顺序来渲染的**。
 
-## 手写实现
+## 实现
 
 首先，我们把 render 函数里创建 dom 的代码抽离成一个函数 `createDom`。
 
@@ -159,4 +159,4 @@ requestIdleCallback(workLoop);
 export default { render };
 ```
 
-至此，我们通过 fiber 实现了 ReactDOM.render 的功能。
+至此，我们通过 fiber 实现了 ReactDOM.render 的功能。不出意外的话，浏览器应该能够正常显示 `hello world!`。

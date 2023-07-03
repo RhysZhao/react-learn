@@ -1,0 +1,1 @@
+const e={key:"v-7afe4da0",path:"/base/render-commit.html",title:"\u6E32\u67D3\u548C\u63D0\u4EA4",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1688349106e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"base/render-commit.md"};export{e as data};

@@ -1,1 +1,0 @@
-const o={key:"v-a20f284e",path:"/origin/hooks.html",title:"Hooks",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1687349599e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"origin/hooks.md"};export{o as data};

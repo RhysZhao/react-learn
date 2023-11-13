@@ -1,0 +1,1 @@
+const e={key:"v-a20f284e",path:"/origin/hooks.html",title:"Hooks",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1699845372e3,contributors:[{name:"hailie",email:"hailie.pan@cloudwise.com",commits:1}]},filePathRelative:"origin/hooks.md"};export{e as data};

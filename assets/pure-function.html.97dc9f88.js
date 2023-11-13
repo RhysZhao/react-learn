@@ -1,1 +1,0 @@
-const e={key:"v-4b50f6d1",path:"/base/pure-function.html",title:"\u7EAF\u51FD\u6570\u7EC4\u4EF6",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1688349106e3,contributors:[{name:"rhys.zhao",email:"rhys.zhao@cloudwise.com",commits:1}]},filePathRelative:"base/pure-function.md"};export{e as data};

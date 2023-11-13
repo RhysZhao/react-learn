@@ -1,14 +1,14 @@
 <!--
  * Author  rhys.zhao
  * Date  2023-06-02 09:55:29
- * LastEditors  rhys.zhao
- * LastEditTime  2023-06-12 10:05:26
+ * LastEditors  hailie.pan
+ * LastEditTime  2023-11-13 11:15:39
  * Description
 -->
 
 # useCallback
 
-useMemo 允许我们**缓存一个函数**。当再次渲染的时候，返回上一次的函数而不是重新定义。
+useCallback 允许我们**缓存一个函数**。当再次渲染的时候，返回上一次的函数而不是重新定义。
 
 ## 语法
 
@@ -25,23 +25,23 @@ useMemo 允许我们**缓存一个函数**。当再次渲染的时候，返回�
 当我们传给子组件的属性有函数的时候,比如下面这个[例子](https://codesandbox.io/s/usecallback-uurypx?file=/src/App.js:0-592)：
 
 ```js
-import React, { useState, memo, useMemo, useCallback } from 'react';
+import React, { useState, memo, useMemo, useCallback } from "react";
 
 const Hello = memo(function Hello({ text, onClick }) {
-  console.log('子组件重新渲染');
+  console.log("子组件重新渲染");
   return <h1 onClick={onClick}>{`hello ${text}!`}</h1>;
 });
 
 export default function App() {
   const [count, setCount] = useState(0);
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
 
   const onAddCount = () => {
     setCount((count) => count + 1);
   };
 
   const onChangeText = () => {
-    setText('world');
+    setText("world");
   };
 
   return (
@@ -60,7 +60,7 @@ export default function App() {
 ```js
 // 使用useCallback来缓存onChangeText
 const onChangeText = useCallback(() => {
-  setText('world');
+  setText("world");
 }, []);
 ```
 
@@ -70,7 +70,7 @@ const onChangeText = useCallback(() => {
 // 使用useMemo缓存onChangeText
 const onChangeText = useMemo(() => {
   return () => {
-    setText('world');
+    setText("world");
   };
 }, []);
 ```
@@ -84,18 +84,18 @@ function useRouter() {
 
   const navigate = useCallback(
     (url) => {
-      dispatch({ type: 'navigate', url });
+      dispatch({ type: "navigate", url });
     },
     [dispatch]
   );
 
   const goBack = useCallback(() => {
-    dispatch({ type: 'back' });
+    dispatch({ type: "back" });
   }, [dispatch]);
 
   return {
     navigate,
-    goBack
+    goBack,
   };
 }
 ```
